@@ -36,6 +36,7 @@ class App extends Component {
             <div>
                 <Header />
                 <CreateTodo 
+                    todoTasks = { this.state.todoTasks }
                     createTask = { this.createTask.bind(this) }
                 />
                 <TodoList 
