@@ -6,6 +6,7 @@ import './App.css';
 import Header from './components/header'
 import CreateTodo from './components/create-todo'
 import TodoList from './components/todolist'
+import Footer from './components/footer'
 
 const todoTasks = [
     {
@@ -45,6 +46,7 @@ class App extends Component {
                     saveTask = { this.saveTask.bind(this) }
                     deleteTask = { this.deleteTask.bind(this) }
                 />
+                <Footer />
             </div>
         );
     }
